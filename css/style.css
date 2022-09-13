@@ -1,0 +1,19 @@
+body{
+	background-color: grey;
+}
+
+h1 {
+	color: purple;
+	text-align: center;
+}
+
+h2{
+	color: rebeccapurple;
+	font-size: 30px;
+
+}
+p{
+	color:  whitesmoke;
+	font-family: verdana;
+	font-size: 20px;
+}
