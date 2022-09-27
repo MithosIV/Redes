@@ -4,10 +4,12 @@ $username = "root";
 $password = "";
 $dbname = "daBase";
 
-$id = $_POST["id"];
-$name = $_POST["name"];
-$age = $_POST["age"];
-$server = $_POST["server"];
+
+$id = $_POST['id'];
+$name = $_POST['name'];
+$age = $_POST['age'];
+$server = $_POST['server'];
+
 
 
 // Create connection
@@ -17,17 +19,27 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO Player2 (ID, Name, Age, Server)
+/*$sql = "INSERT INTO Player2 (ID, Name, Age, Server)
 VALUES (2, 'Mithos3', 25, 'Uva')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
-}
+}*/
+
+/*$sql = "INSERT INTO pCharacter (ID, Name, cClass, cLevel)
+VALUES (2, 'Mithos3', 'Mage', 5)";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}*/
+
 
 $sql = "INSERT INTO Player2 (ID, Name, Age, Server)
-VALUES (3, $name, $age, $server)";
+VALUES (. 3 ., . $name ., . $age ., . $server .)";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
@@ -36,4 +48,6 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+
+
 ?>

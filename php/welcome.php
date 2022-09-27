@@ -1,5 +1,6 @@
 <?php
 
+$id = $_POST['id'];
 $name = $_POST['name'];
 $age = $_POST['age'];
 $server = $_POST['server'];
